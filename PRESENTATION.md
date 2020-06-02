@@ -1,5 +1,6 @@
 Part 0:
 1. Join `#slack-bot-demo`
+2. Have people test out Webhook command (listed in RESOURCES.md)
 
 Part 1: What you can do
 1. Youtube Strangerer Things

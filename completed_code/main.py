@@ -35,10 +35,12 @@ def send_message(message_json, debug=False):
                 f"something went wrong, got code {r.status_code} with {r.content}"
             )
 
+
 def get_weather(lat=LAT, lon=LON, exclude=['minutely, hourly, daily']):
     r = requests.get(f"https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={(',').join(exclude)}&appid={WEATHER_API_KEY}&units=imperial")
     data = r.json()
     return f"The temperature is currently {str(data['current']['temp'])} and outside there are {data['current']['weather'][0]['description']}."
+
 
 def main(event=None, context=None):
     weather = get_weather()

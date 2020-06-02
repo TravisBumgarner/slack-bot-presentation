@@ -1,0 +1,5 @@
+WEATHER_API_KEY = ''
+LAT = ''
+LON = ''
+SLACK_WEBHOOK_URL = ''
+YOUR_FULL_NAME = ''
